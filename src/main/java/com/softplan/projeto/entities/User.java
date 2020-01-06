@@ -1,8 +1,6 @@
 package com.softplan.projeto.entities;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,6 +20,13 @@ public class User implements Serializable {
 	private String phone;
 	private String password;
 	
+	
+	
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public User(Long id, String name, String email, String phone, String password) {
 		super();
 		this.id = id;
